@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  .full{
+       background-color: #f7f9fc;
+  }
+  .container {
+  
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-image: url("Header.jpg");
+    background-size:cover;
+    background-position: center;
+    color: rgb(255, 107, 9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(245, 11, 11, 0.753);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .upload {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #1cdde4;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: border 0.2s ease-in-out;
+  }
+  
+  .upload:hover {
+    border-color: #450fc4;
+  }
+  
+  .upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .upload-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .upload-text {
+    font-size: 18px;
+    color: #ad8a14;
+  }
+  
+  .quality {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .quality-label {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .quality-slider {
+    width: 200px;
+    height: 10px;
+    -webkit-appearance: none;
+    background: rgb(170, 154, 11);
+    outline: none;
+    opacity: 0.7;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .quality-slider:hover {
+    opacity: 1;
+  }
+  
+  .quality-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(0, 119, 204);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .quality-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+  }
+  
+  .quality-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: rgb(0, 119, 204);
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .quality-value {
+    font-size: 18px;
+  }
+  
+  .compress-btn {
+    padding: 10px 20px;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(0, 119, 204),
+      rgb(0, 102, 179)
+    );
+    color: rgb(196, 225, 247);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .compress
+  /* Footer styles */
+footer {
+  background-color: #c7834b;
+  color: #ce9292;
+  font-size: 14px;
+  padding: 30px 0;
+}
+
+
+ 
+
+  #details-section {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+  }
+  
+  #details-modal {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #dda2a2;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  #details-modal h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  #details-modal p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  #details-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #e97070;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  #details-close:hover {
+    color: #333;
+  }
+
+ 
+ 
+  .choice {
+    padding: 10px 20px;
+    color: rgb(28, 8, 141);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    text-align: center;
+  }
+  button {
+    padding: 10px 20px;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(0, 119, 204),
+      rgb(0, 102, 179)
+    );
+    color: rgb(196, 225, 247);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+ 
+  footer {
+    background-color: #3c27b4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+
+  nav {
+    background-color: #3c27b4;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  div a {
+    color: #fca80d;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  nav a:first-child {
+    margin-left: 0;
+  }
+  nav header{
+    justify-content: right;
+    color: rgb(189, 41, 157);
+    text-align: right;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+ }  
+ 
+  .container2 {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    .container2 p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #666;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #ff8c00;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    
+    .cta-button:hover {
+      background-color: #ff6b00;
+    }
+    
+    /* Animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out;
+    }

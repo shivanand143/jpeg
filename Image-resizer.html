@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3019202797965457" crossorigin="anonymous"></script>
+    <meta name="google-site-verification" content="xQqgfDXnzb5fVjFyc_95g9QoFcKhpmGiVagH88Cb5Lk" />
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="Image Size Reducer-1.png">
+    <title>Image Editor</title>
+     <meta name="description" content="compress jpeg, reduce jpeg size, jpeg optimization, image compression, lossless compression, compress image, compress photo, jpeg resizer, compress jpeg online, bulk jpeg compressor, image resize, photo resize, resize image online, bulk image resizer, image size reduction, image resizer app, picture resizer, online image resizer, image scaling, photo resizer,image resizer">
+     <link rel="stylesheet" href="nav.css"/>
+    <style>
+        /* CSS styles for the editor */
+body {
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: #f5f10f;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #4a00ac;
+  font-size: 58px;
+}
+
+input[type="file"] {
+  display: rgb(167, 95, 95);
+  font-size: larger;
+}
+
+.image-preview {
+  max-width: 400px;
+  max-height: 400px;
+  margin-bottom: 20px;
+  border: 2px solid #65c2d3;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4c77af;
+  color: white;
+  background-image: linear-gradient(to bottom, #4c77af, #3b5f8a);
+  box-shadow: 0 5px 0 #315a86;
+}
+
+.btn-primary:hover {
+  background-color: #3b5f8a;
+  background-image: linear-gradient(to bottom, #3b5f8a, #2d4c6e);
+  box-shadow: 0 3px 0 #315a86;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #4c77af;
+  border: 2px solid #4c77af;
+}
+
+.btn-secondary:hover {
+  background-color: #4c77af;
+  color: white;
+}
+  
+  @media only screen and (min-width: 500px) {
+    footer {
+      font-size: 16px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+      font-size: 22px;
+      justify-content: center;
+    }
+  
+    .col-md-4 {
+      width: calc(33.33333% - 30px);
+      margin: 0 15px;
+    }
+  
+    .contact-info {
+      text-align: right;
+    }
+  
+    .col-md-12 {
+      text-align: center;
+    }
+    footer {
+  background-color: #ce7171;
+  padding: 18px;
+  font-size: 20px;
+  width: content;
+  
+}
+
+footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   font-size: 20px;
+}
+
+.footer-links li {
+  margin: 0 10px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #4d2626;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ff6f00;
+}
+
+  }
+ </style>
+  </head>
+  <body>
+       <amp-auto-ads type="adsense" data-ad-client="ca-pub-3019202797965457">
+    </amp-auto-ads>
+    <nav id='menu'>
+    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+    <ul>
+      <li><a href='https://jpegcompress.tech/'>Home</a></li>
+      <li><a href='https://jpegcompress.tech/about-us'>About</a></li>
+      <li><a class='dropdown-arrow' href='#other-tools'>Services</a>
+        <ul class='sub-menus'>
+          <li><a href='https://jpegcompress.tech/Image-resizer'>Image Resizer</a></li>
+          <li><a href='https://jpegcompress.tech/mini-data/mini-project'>Free Miniprojects</a></li>
+        </ul>
+      </li>
+      <li><a href='https://jpegcompress.tech/privacy-policy'>Privacy Policy</a></li>
+      <li><a href='https://jpegcompress.tech/contact-us'>Contact Us</a></li>
+      <li><a href='https://jpegcompress.tech/blog/blog'>Blog</a></li>
+     
+    </ul>
+    <div class="logo" align="right">
+        <a href="http://jpegcompress.tech/">
+          <img src="JPEG Compressor and Resizer (2).png" alt="jpegcompress.tech">
+        </a>
+      </div>
+  </nav>
+
+  <script>
+    function updatemenu() {
+  if (document.getElementById('responsive-menu').checked == true) {
+    document.getElementById('menu').style.borderBottomRightRadius = '0';
+    document.getElementById('menu').style.borderBottomLeftRadius = '0';
+  }else{
+    document.getElementById('menu').style.borderRadius = '10px';
+  }
+}
+  </script>
+    <div class="editor">
+      <h1>Image Editor</h1>
+      <input type="file" id="input-file" accept="image/*">
+      <img src="" alt="" class="image-preview">
+      <div>
+        <button class="btn btn-primary" id="btn-resize">Resize</button>
+        <button class="btn btn-primary" id="btn-rotate">Rotate</button>
+        <button class="btn btn-secondary" id="btn-reset">Reset</button>
+      </div>
+      <a class="btn btn-primary download-link" id="btn-download" download>Download</a>
+    </div>
+    <section class="intro">
+      <div class="background-image"></div>
+      <div class="content">
+        <h2>Your JPEG Compressor and Resizer</h2>
+        <p>Welcome to our innovative JPEG Compressor and Resizer! Whether you're accessing our platform on your mobile device or desktop computer, we've designed a seamless experience just for you. Prepare to unlock the power of image optimization like never before.</p>
+      <p>With our compressor, you can significantly reduce the file size of your JPEG images without compromising on image quality. Say goodbye to large, slow-loading images that impact website performance. Our advanced compression algorithms ensure that your images are optimized for web usage while retaining their clarity and vibrancy.</p>
+        <div class="why-use">
+          <h2>Why Use Our Compressor and Resizer?</h2>
+          <div class="why-use-box-container">
+            <div class="why-use-box">
+              <h3>1. Efficient Compression</h3>
+              <p>Our compressor utilizes advanced algorithms to efficiently reduce the file size of your JPEG images while maintaining excellent image quality.</p>
+            </div>
+            <div class="why-use-box">
+              <h3>2. Seamless Resizing</h3>
+              <p>Resize your images effortlessly using our compressor, ensuring they fit perfectly within your desired dimensions without compromising clarity or sharpness.</p>
+            </div>
+            <div class="why-use-box">
+              <h3>3. Time Savings</h3>
+              <p>Optimizing your images with our compressor saves valuable time by automating the compression and resizing process, allowing you to focus on other important tasks.</p>
+            </div>
+            <div class="why-use-box">
+              <h3>4. Cross-Device Compatibility</h3>
+              <p>Our compressor is designed to be compatible with various devices, ensuring you can optimize your JPEG images seamlessly across desktop computers, laptops, tablets, and mobile phones.</p>
+            </div>
+          </div>
+       </div>
+       <h2>How our JPEG Compressor and Resizer works?</h2>
+        <ol class="steps">
+          <li>
+            <div class="step-box">
+              <span class="step-number">1</span>
+              <p>Select your JPEG image.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-box">
+              <span class="step-number">2</span>
+              <p>Adjust the compression settings to your preference.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-box">
+              <span class="step-number">3</span>
+              <p>Resize the image dimensions, if needed.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-box">
+              <span class="step-number">4</span>
+              <p>Click "Compress and Resize" to optimize your image.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-box">
+              <span class="step-number">5</span>
+              <p>Download the optimized image to use it anywhere!</p>
+            </div>
+          </li>
+        </ol>
+        
+      </div>
+      <link rel="stylesheet" href="y.css">
+    </section>
+    
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+        <h3>What is a JPEG compressor and resizer?</h3>
+        <div class="answer">
+          <p>A JPEG compressor and resizer is a tool used to reduce the file size and dimensions of JPEG images, making them more suitable for sharing and displaying on the web.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <h3>How does your compressor and resizer work?</h3>
+        <div class="answer">
+          <p>Our compressor and resizer uses advanced algorithms to analyze and reduce the size of JPEG images without sacrificing quality. We also allow users to specify custom dimensions for their images.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <h3>Is my data safe with your compressor and resizer?</h3>
+        <div class="answer">
+          <p>Yes, we take data privacy and security very seriously. All images uploaded to our website are encrypted and stored securely on our servers. We also do not share any user data with third parties.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <h3>What is the maximum file size I can upload?</h3>
+        <div class="answer">
+          <p>Our website allows users to upload JPEG images up to 5MB in size. If you have a larger file, we recommend using a desktop application or online tool designed for bulk image compression.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <h3>Can I compress and resize multiple images at once?</h3>
+        <div class="answer">
+          <p>Currently, our website only allows users to compress and resize one image at a time. However, we are working on adding a batch processing feature in the near future.</p>
+        </div>
+      </div>
+      <script src="sample.js"></script>
+      <link rel="stylesheet" href="sample.css">
+    </section>
+    <footer>
+      <div class="details">
+        <div class="row">
+          <div class="col-12">
+            <ul class="footer-links">
+              <li><a href="https://jpegcompress.tech">Home</a></li>
+              <li><a href="https://jpegcompress.tech/about-us">About</a></li>
+              <li><a href="https://jpegcompress.tech/contact-us">Contact Us</a></li>
+              <li><a href="#" onclick="showAlert()" style="display:none;">Developed By</a></li>
+              <li><a href="https://jpegcompress.tech/privacy-policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <p>&copy; 2023 jpegcompress.tech| All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script>
+      function showAlert() {
+    alert('Developed by Shivanand Pujari');
+  }
+    </script>
+    <script src="doc.js"></script>
+  </body>
+</html>

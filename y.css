@@ -1,0 +1,153 @@
+.intro {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    text-align: center;
+    color: #0f0f0f;
+    font-style: italic;
+  }
+  
+  .intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .intro p {
+    font-size: 18px;
+  }
+  
+  .intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .steps {
+    list-style-type: none;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  .steps li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .step-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(194,112,189,1) 31%, rgba(148,187,233,1) 100%); 
+    color: #000000;
+    border-radius: 8px;
+    width: 100%;
+  }
+  .step-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-number {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e68c16;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 50%;
+  }
+  
+  .why-use {
+    margin-top: 40px;
+  }
+  
+  .why-use-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .why-use-box {
+    position: relative;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
+    color: #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    width: 45%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .why-use-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .why-use-box p {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .why-use-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .why-use-box:hover p {
+    opacity: 0.8;
+  }
+  
+  /* Animated CSS */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .content {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .why-use-box-container {
+      flex-direction: column;
+    }
+  
+    .why-use-box {
+      width: 100%;
+    }
+  }
+  

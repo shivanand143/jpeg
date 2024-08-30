@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  nav a:first-child {
+    margin-left: 0;
+  }
+  footer {
+    background-color: #3c27b4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  nav header{
+    justify-content: right;
+    color: rgb(189, 41, 157);
+    text-align: right;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+ }  
+  div a {
+    color: #fca80d;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  .hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.price {
+  text-decoration: line-through;
+  color: #999; /* Color for the original price */
+  margin-right: 5px; /* Adjust as needed to create spacing between the prices */
+}
+.btn:hover {
+    background: #555;
+}
+
+/* Products section styles */
+.products {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,34 @@
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    justify-content: center;
+    text-align: center;
+    max-width: fit-content;
+  }
+  
+  .faq {
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .faq h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .answer p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .faq.active .answer {
+    max-height: 500px; /* adjust as needed */
+  }
+  
