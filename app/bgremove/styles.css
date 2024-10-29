@@ -45,6 +45,11 @@ canvas {
   border-radius: 10px;
 }
 
+#messageWidget {
+  margin: 15px 0;
+}
+
+
  /* Footer styles */
 footer {
     background-color: #3c27b4;
