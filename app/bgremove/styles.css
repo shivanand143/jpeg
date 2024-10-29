@@ -47,8 +47,16 @@ canvas {
 
  /* Footer styles */
 footer {
-  background-color: #c7834b;
-  color: #ce9292;
-  font-size: 14px;
-  padding: 30px 0;
-}
+    background-color: #3c27b4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+
