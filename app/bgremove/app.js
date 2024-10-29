@@ -22,15 +22,15 @@ selfieSegmentation.onResults(onResults);
 // reCAPTCHA callback function to set verified status
 function onCaptchaSuccess() {
   captchaVerified = true;
-  processBackgroundRemoval();
+  processBackgroundRemoval(); // Automatically call the function to process background removal
 }
 
 // Handle Remove button click
 function handleRemove() {
   if (!captchaVerified) {
-    grecaptcha.execute();  // Programmatically trigger reCAPTCHA
+    grecaptcha.execute();  // Programmatically trigger reCAPTCHA if not verified
   } else {
-    processBackgroundRemoval();
+    processBackgroundRemoval(); // If verified, directly process the removal
   }
 }
 
@@ -93,6 +93,9 @@ dropArea.addEventListener("drop", (event) => {
   const file = event.dataTransfer.files[0];
   if (file) loadImageToCanvas(file);
 });
+
+// Ensure the Remove button triggers reCAPTCHA and starts processing if verified
+removeBgBtn.addEventListener("click", handleRemove);
 
 downloadBtn.addEventListener("click", () => {
   const link = document.createElement("a");
