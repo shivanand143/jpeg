@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+}
+
+.card {
+  max-width: 600px;
+  margin: auto;
+}
+
+.drop-area {
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f8f9fa;
+}
+
+.drop-area:hover {
+  background-color: #e2e6ea;
+}
+
+.loader-widget {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
