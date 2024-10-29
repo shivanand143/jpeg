@@ -8,6 +8,7 @@ const removeBgBtn = document.getElementById("removeBgBtn");
 const downloadBtn = document.getElementById("downloadBtn");
 const loader = document.getElementById("loader");
 const dropArea = document.getElementById("drop-area");
+const messageWidget = document.getElementById("messageWidget");
 
 let uploadedImage;
 let captchaVerified = false;
@@ -28,6 +29,8 @@ function onCaptchaSuccess() {
 // Handle Remove button click
 function handleRemove() {
   if (!captchaVerified) {
+    messageWidget.textContent = "Please complete the reCAPTCHA to proceed.";
+    messageWidget.classList.remove("d-none");
     grecaptcha.execute();  // Programmatically trigger reCAPTCHA if not verified
   } else {
     processBackgroundRemoval(); // If verified, directly process the removal
@@ -94,7 +97,7 @@ dropArea.addEventListener("drop", (event) => {
   if (file) loadImageToCanvas(file);
 });
 
-// Ensure the Remove button triggers reCAPTCHA and starts processing if verified
+// Ensure the Remove button triggers a message if reCAPTCHA is not completed
 removeBgBtn.addEventListener("click", handleRemove);
 
 downloadBtn.addEventListener("click", () => {
