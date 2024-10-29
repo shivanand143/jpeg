@@ -52,16 +52,39 @@ canvas {
 
  /* Footer styles */
 footer {
-    background-color: #3c27b4;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-  }
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white; /* Text color */
+  padding: 20px; /* Padding around the footer */
+  text-align: center; /* Center align text */
+}
+
+.footer-content {
+  margin-bottom: 10px; /* Margin below the content */
+}
+
+footer header {
+  font-size: 24px; /* Larger font size for the header */
+  margin-bottom: 10px; /* Space below the header */
+}
+
+footer nav {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the nav links */
+  flex-wrap: wrap; /* Allow wrapping of nav links */
+}
+
+footer nav a {
+  color: white; /* Link color */
+  margin: 0 15px; /* Space between links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+footer nav a:hover {
+  color: #ffc107; /* Change color on hover */
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+}
 
