@@ -1,0 +1,61 @@
+ Validaion.java
+
+import java.io.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+
+public class Validation extends HttpServlet {
+    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+        PrintWriter pw = res.getWriter();
+        String x = req.getParameter("user");
+        String y = req.getParameter("pwd");
+        if (x.equals("admin") && y.equals("admin")) {
+            pw.println("<font color='green' size='5'>Welcome to this webpage</font>");
+        } else {
+            pw.println("<font color='red' size='5'>Invalid username or password</font>");
+        }
+        pw.close();
+    }
+}
+
+
+login.html
+
+
+<html>
+<head><title>login</title></head>
+<body>
+<form name="login form" method="post" action="http://localhost:8080/LoginProject/servlet/validation">
+
+<br/><br/><br/><br/><br/>
+<table align="center" border="3" border color="blue" cellspacing="0"height="120">
+<tr><td align="center"><font color="blue" size="4">LOGIN FORM</font></td></tr>
+<tr><td><table><tr><td>UserName</td><td><input type="text" name="user"/></td></tr>
+<tr><td>Password</td><td><input type="password" name="pwd"/></td></tr>
+<tr><td align="center"><input type="submit" value="LOGIN"/></td><td align="center"><input
+type="Reset" value="RESET"/></td></tr>
+</table></td></tr></table></form></body>
+</html>
+
+
+ web.xml
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Servlet Definition -->
+    <servlet>
+        <servlet-name>Validation</servlet-name>
+        <servlet-class>Validation</servlet-class> <!-- No package name here -->
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>Validation</servlet-name>
+        <url-pattern>/servlet/validation</url-pattern>
+    </servlet-mapping>
+
+</web-app>

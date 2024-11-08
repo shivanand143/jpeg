@@ -1,0 +1,40 @@
+import java.sql.*;  
+public class connection {  
+    public static void main(String[] args) {  
+        try {  
+            Class.forName("com.mysql.jdbc.Driver");  
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/dbtest2", "root", "1234");  
+            Statement s = con.createStatement();  
+            s.execute("create table emp2 ( stud_id integer,stud_name varchar(20),stud_address varchar(30) )"); // creaa table  
+            s.execute("insert into emp2 values(001,'ARman','Delhi')"); // insert first row into the table   
+            s.execute("insert into emp2 values(002,'Robert','Canada')"); // insert second row into the table   
+            s.execute("insert into emp2 values(003,'Ahuja','Karnal')"); // insert third row into the table  
+	    s.execute("insert into emp2 values(004,'Ahujam','Karnal')");  
+            ResultSet rs = s.executeQuery("select * from emp2");  
+            if (rs != null) // if rs == null, then there is no record in ResultSet to show  
+                while (rs.next()) // By this line we will step through our data row-by-row  
+            {  
+                System.out.println("Id of the student: " + rs.getString(1));  
+                System.out.println("Name of student: " + rs.getString(2));  
+                System.out.println("Address of student: " + rs.getString(3));  
+             }  
+            s.close(); // close the Statement to let the database know we're done with it  
+            con.close(); // close the Connection to let the database know we're done with it  
+        } catch (SQLException err) {  
+            System.out.println("ERROR: " + err);  
+        } catch (Exception err) {  
+            System.out.println("ERROR: " + err);  
+        }  
+    }  
+}  
+
+
+Pom.xml
+
+<dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.28</version>
+        </dependency>
+    </dependencies>
